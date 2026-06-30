@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amjad Tailoring Company</title>
+<title>Amjad Tailoring house</title>
 
 <style>
 *{
@@ -14,6 +14,27 @@
 }
 
 body{
+    <div id="appointmentForm" style="display:none; background:white; padding:20px; border:2px solid #ccc; border-radius:10px; margin:20px;">
+
+<h2>Book Appointment</h2>
+
+<input type="text" id="name" placeholder="Your Name"><br><br>
+
+<input type="tel" id="phone" placeholder="Phone Number"><br><br>
+
+<select id="dress">
+<option>Shalwar Kameez</option>
+<option>Waistcoat</option>
+<option>Pant</option>
+<option>Coat</option>
+<option>Suit</option>
+</select><br><br>
+
+<input type="date" id="date"><br><br>
+
+<button onclick="sendWhatsApp()">Submit</button>
+
+</div>
     background-color:#f7af9d;
     font-family:Arial, sans-serif;
 }
@@ -92,7 +113,7 @@ button:hover{
 
 <h5>PERFECT FIT, PERFECT YOU</h5>
 
-<h1>WELCOME TO AMJAD TAILORING COMPANY</h1>
+<h1>WELCOME TO AMJAD TAILORING HOUSE</h1>
 
 <p id="p1">
 We create perfectly tailored outfits that reflect your style and personality.
@@ -110,9 +131,11 @@ Experience premium tailoring with attention to every detail.
 </p>
 
 <div class="button-area">
-    <button>Book Appointment</button>
+    <button onclick="openForm()">Book Appointment</button>
     <button>Our Services</button>
-    <button>Chat on WhatsApp</button>
+<a href="https://wa.me/923100991930?text=Assalam-o-Alaikum,%20Mujhe%20silai%20ke%20bare%20mein%20maloomat%20chahiye." id="whatsapp" target="_blank">
+    Chat on WhatsApp
+</a>
 </div>
 
 <div style="clear:both;"></div>
@@ -128,8 +151,10 @@ Experience premium tailoring with attention to every detail.
 
 <div style="text-align:center;">
 <button>View More Designs</button>
-<button>Chat on WhatsApp</button>
-</div>
+<a href="https://wa.me/923100991930?text=Assalam-o-Alaikum,%20Mujhe%20silai%20ke%20bare%20mein%20maloomat%20chahiye." id="whatsapp" target="_blank">
+    Chat on WhatsApp
+</a>
+    /div>
 
 <div class="section">
 
@@ -169,7 +194,7 @@ Experience premium tailoring with attention to every detail.
 
 <div class="footer-box">
 
-<h2>Amjad Tailoring Company</h2>
+<h2>Amjad Tailoring house</h2>
 
 <p>
 Perfect Fit, Perfect You
@@ -210,8 +235,7 @@ We stitch quality dresses with care and experience.
 </footer>
 
 <div id="copyright">
-© 2026 Amjad Tailoring Company | Designed by Amjad Ali
-</div>
+© 2026 Amjad Tailoring house | Designed by Mukhtar ali</div>
 
 </body>
 </html>
