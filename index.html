@@ -14,27 +14,6 @@
 }
 
 body{
-    <div id="appointmentForm" style="display:none; background:white; padding:20px; border:2px solid #ccc; border-radius:10px; margin:20px;">
-
-<h2>Book Appointment</h2>
-
-<input type="text" id="name" placeholder="Your Name"><br><br>
-
-<input type="tel" id="phone" placeholder="Phone Number"><br><br>
-
-<select id="dress">
-<option>Shalwar Kameez</option>
-<option>Waistcoat</option>
-<option>Pant</option>
-<option>Coat</option>
-<option>Suit</option>
-</select><br><br>
-
-<input type="date" id="date"><br><br>
-
-<button onclick="sendWhatsApp()">Submit</button>
-
-</div>
     background-color:#f7af9d;
     font-family:Arial, sans-serif;
 }
@@ -236,6 +215,40 @@ We stitch quality dresses with care and experience.
 
 <div id="copyright">
 © 2026 Amjad Tailoring house | Designed by Mukhtar ali</div>
+<div id="appointmentForm" style="display:none; background:white; padding:20px;">
+<h2>Book Appointment</h2>
 
+<input type="text" id="name" placeholder="Your Name"><br><br>
+
+<input type="tel" id="phone" placeholder="Phone Number"><br><br>
+
+<select id="dress">
+<option>Shalwar Kameez</option>
+<option>Waistcoat</option>
+<option>Pant</option>
+<option>Coat</option>
+<option>Suit</option>
+</select><br><br>
+
+<input type="date" id="date"><br><br>
+
+<button onclick="sendWhatsApp()">Submit</button>
+</div>
+    <script>
+function openForm(){
+document.getElementById("appointmentForm").style.display="block";
+}
+
+function sendWhatsApp(){
+var name=document.getElementById("name").value;
+var phone=document.getElementById("phone").value;
+var dress=document.getElementById("dress").value;
+var date=document.getElementById("date").value;
+
+var message="Name: "+name+"%0APhone: "+phone+"%0ADress: "+dress+"%0ADate: "+date;
+
+window.open("https://wa.me/923100991930?text="+message,"_blank");
+}
+</script>
 </body>
 </html>
