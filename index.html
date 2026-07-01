@@ -249,6 +249,28 @@ var message="Name: "+name+"%0APhone: "+phone+"%0ADress: "+dress+"%0ADate: "+date
 
 window.open("https://wa.me/923100991930?text="+message,"_blank");
 }
+        <script>
+function openForm(){
+    var form = document.getElementById("appointmentForm");
+    form.style.display = "block";
+    form.scrollIntoView({behavior:"smooth"});
+}
+
+function sendWhatsApp(){
+    var name=document.getElementById("name").value;
+    var phone=document.getElementById("phone").value;
+    var dress=document.getElementById("dress").value;
+    var date=document.getElementById("date").value;
+
+    var message=
+    "Name: "+name+
+    "%0APhone: "+phone+
+    "%0ADress: "+dress+
+    "%0ADate: "+date;
+
+    window.open("https://wa.me/923100991930?text="+message,"_blank");
+}
+</script>
 </script>
 </body>
 </html>
